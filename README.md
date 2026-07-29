@@ -1,4 +1,4 @@
-# 📅 Virtual Meeting Booking System
+# 🗓️ Virtual Meeting Booking System
 
 A lightweight, responsive web application designed for booking and managing meeting room schedules. Built with **React** and **Vite**, this application prevents double-booking conflicts and validates room availability in real-time.
 
