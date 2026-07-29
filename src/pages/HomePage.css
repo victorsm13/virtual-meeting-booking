@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Joyful';
+    src: url('../fonts/Super\ Joyful.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Joyful';
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 10rem 0;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 40%;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(110, 109, 109);
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.inputItemBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputItemBox input{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.inputItemBox input:focus{
+    border: 1px solid rgb(0, 253, 0);
+}
+
+.inputItemBox #salas {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    height: 30px;
+    border-radius: 5px;
+    width: 90px;
+    outline: none;
+}
+
+#btnReservar{
+    cursor: pointer;
+    background-color: rgb(55, 57, 202);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    height: 30px;
+    width: 100px;
+    transition: 0.3s ease all;
+}
+
+#btnReservar:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+#btnReservar:active{
+    transform: scale(90%);
+}
+
+.reservations{
+    width: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 300px);
+    margin: 4rem;
+}
+
+.resevaBox{
+    position: relative;
+    color: #fff;
+    display: flex;
+    border: 1px solid rgba(0, 255, 234, 0.404);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #0537a1;
+    width: 250px;
+    height: 250px;
+}
+
+.resevaBox .deleteReunion{
+    cursor: pointer;
+    position: absolute;
+    top: -5%;
+    right: -7%;    
+    padding: 0.2rem;
+    border: none;
+    background-color: none;
+}
+
+#sNomeReuniao{
+    font-size: 1.5rem;
+    color: rgb(172, 238, 243);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.resevaBox p span{
+    font-size: 1.1rem;
+    text-decoration:underline;
+    color: #cde0e9;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 1400px) {
+    .mainContent{
+       width: 50%;  
+    }
+}
+
+@media (max-width: 1350px) {
+    .mainContent{
+        height: auto;
+    }
+    .inputBox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputItemBox{
+        width: 50%;
+    }
+    .inputItemBox #salas {
+        width: 100%;
+    }
+    .reservations{
+    grid-template-columns: repeat(2, 300px);
+   }
+}
+
+@media (max-width: 1100px) {
+    .mainContent{
+       width: 60%;  
+    }
+
+    .reservations{
+    grid-template-columns: repeat(1, 300px);
+   }
+}
+
+@media (max-width: 900px) {
+    .mainContent{
+       width: 70%;  
+    }
+}
+
+@media (max-width: 775px) {
+    .mainContent{
+       width: 80%;  
+    }
+}
+
+@media (max-width: 670px) {
+    .mainContent{
+       width: 90%;  
+    }
+}
